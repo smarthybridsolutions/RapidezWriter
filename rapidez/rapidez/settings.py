@@ -124,3 +124,24 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+#CELERY SETTINGS
+
+CELERY_BROKER_URL = 'redis://h:p520f7256f360f2551348275b1d5b128640cc519d7e11454453c91b02bd0a6821@ec2-18-214-74-238.compute-1.amazonaws.com:16559'
+
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+
+
+#EMAIL SETTINGS
+# "rapidez-writer" was successfully created and added to the next step.
+
+SENDGRID_API_KEY = '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'
+
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_ADMIN = 'dev@s-hybrid.com'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587 #use 587, 25 or 465
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = SENDGRID_API_KEY

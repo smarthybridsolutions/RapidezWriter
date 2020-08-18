@@ -6,7 +6,10 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-django = "==3.0.8"
+django = "==3.1"
+python-docx = "*"
+celery = "*"
+redis = "*"
 
 [requires]
 python_version = "3.8"

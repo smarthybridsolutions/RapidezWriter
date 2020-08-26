@@ -5,9 +5,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
 header {
   position: fixed;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   top: 0;
   left: 0;
   width: 100%;
@@ -23,6 +23,8 @@ header {
 }
 header h5{
   font-weight: 600 !important;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+
   font-size: 26px;
   padding-top: 15px;
 }
@@ -32,6 +34,7 @@ header.sticky h5{
 }
 
 header a {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   width: 183px;
   padding-bottom: 20px;
   font-size: 18px;
@@ -49,6 +52,8 @@ header.sticky {
 
 header.sticky a {
   padding-bottom: 0px;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+
 }
 
 header.sticky ul li:hover > ul {
@@ -101,6 +106,7 @@ header ul {
 header ul li {
   position: relative;
   list-style: none;
+  font-size: 16px;
 }
 
 header ul li a {
@@ -122,9 +128,13 @@ header.sticky ul li a {
 
 .drop ul li {
   position: relative;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+
 }
 .drop ul ul {
   position: absolute;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+
   padding: 0;
   /* min-width: 300px; */
   display: none;
@@ -222,7 +232,7 @@ header.sticky ul li a {
   width: 50%;
   /* margin-top: 300px; */
   /* height: 98vh; */
-  padding-left: 50px;
+  padding-left: 10%;
   float: left;
 }
 
@@ -285,6 +295,7 @@ header.sticky ul li a {
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
   overflow: hidden;
+  padding: 0px 6%;
 }
 .p1 {
   text-align: center;
@@ -312,6 +323,7 @@ header.sticky ul li a {
 
 .m-mobile {
   height: 750px;
+  padding: 0px 6%;
 }
 .text-1 {
   width: 62%;
@@ -331,7 +343,7 @@ header.sticky ul li a {
   font-size: 14.4px;
 }
 .text-1 h3 {
-  font-size: 30.4px;
+  font-size: 27.4px;
   margin: 0;
   margin-top: 6px;
   margin-left: 99px;
@@ -340,7 +352,7 @@ header.sticky ul li a {
 
 .text-1 .light1 {
   margin-left: 99px;
-  font-size: 20px;
+  font-size: 17px;
   margin-top: 15px;
 }
 
@@ -383,9 +395,9 @@ header.sticky ul li a {
 
 .cont .light2 {
   text-align: left;
-  font-size: 19px;
+  font-size: 17px;
   padding-right: 200px;
-  margin-top: 33px;
+  margin-top: 24px;
 }
 .cont {
   display: flex;
@@ -426,6 +438,7 @@ header.sticky ul li a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
+  padding: 0 3.5%;
 }
 
 .main-h1 {
@@ -459,13 +472,13 @@ header.sticky ul li a {
 }
 
 .box22 {
-  width: 45%;
+  width: 46%;
   height: 350px;
   background: #fff;
   position: absolute;
   top: 0;
   right: 0;
-  margin-right: 50px;
+  margin-right: 130px;
   margin-top: 120px;
 }
 .text22 {
@@ -500,7 +513,7 @@ header.sticky ul li a {
   width: 100%;
   margin-top: 50px;
   padding: 0;
-  font-size: 32px;
+  font-size: 28.4px;
   /* letter-spacing: 2px; */
   /* margin-top: 10px; */
   font-weight: 700;
@@ -614,7 +627,7 @@ header.sticky ul li a {
 }
 
 .main-cc h4 {
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 600;
   text-align: center;
 }
@@ -640,9 +653,10 @@ header.sticky ul li a {
 /* -------------------------------------------------------footer--------------------------------- */
 
 .footer {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   display: grid;
   grid-template-columns: repeat(3, 250px) 1fr;
-  height: 233px;
+  height: 273px;
     /* margin-top: 80px; */
   /* border-top: 2px solid #a7b2d8; */
   padding: 9px 60px;
@@ -650,6 +664,10 @@ header.sticky ul li a {
   color: #6275b975;
   margin-top: 40px;
   background-image: linear-gradient(174deg, rgba(59,11,72,0) 32%, rgba(59,11,72,0.5));
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .product,
@@ -659,13 +677,16 @@ header.sticky ul li a {
 }
 
 .footer h5 {
-  font-weight: bold;
-  font-size: 16px;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
   color: #a7b2d8;
 }
 
 .footer p {
-  font-size: 15px;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
   margin-bottom: 5px;
   color: #a7b2d8;
 }
@@ -675,6 +696,7 @@ header.sticky ul li a {
 }
 
 .branded h5 {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   /* margin-top: 15px; */
   font-weight: 600;
   font-size: 34px;

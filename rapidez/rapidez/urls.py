@@ -17,10 +17,22 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-
+from main import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.home, name="home"),
+    path('About', views.about, name="about"),
+    path('Contact-Us', views.contact_us, name="contactUs"),
+    path('Resume-Consulting', views.resume_consulting, name="resumeConsulting"),
+    path('Resume-Writing', views.resume_writing, name="resumeWriting"),
+    path('Resume-Makeover', views.resume_makeover, name="resumeMakeover"),
+    path('Resume-Makeover1', views.resume_makeover_1, name="resumeMakeover1"),
+    path('Resume-Makeover2', views.resume_makeover_2, name="resumeMakeover2"),
+    path('Resume-Video', views.resume_video, name="resumeVideo"),
+    path('linkedIn', views.linkedin, name="linkedIn"),
+    path('Testimonials', views.testimonials, name="testimonials"),
+    
     path('resumeupload/', include('resumeAnalysis.urls')),
 ]
 

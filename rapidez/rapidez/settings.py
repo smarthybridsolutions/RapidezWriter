@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+from sendgrid import SendGridAPIClient
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -142,7 +143,7 @@ CELERY_TASK_SERIALIZER = 'json'
 #EMAIL SETTINGS
 # "rapidez-writer" was successfully created and added to the next step.
 
-SENDGRID_API_KEY = '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'
+SENDGRID_API_KEY = SendGridAPIClient(os.environ.get('SENDGRID_API_KEY'))
 
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_ADMIN = 'dev@s-hybrid.com'
